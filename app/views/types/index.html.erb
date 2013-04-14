@@ -1,0 +1,14 @@
+<h1>Listing posts</h1>
+<%= link_to 'New Type', :action => :new %>
+<br/><br/>
+<table>
+  <tr>
+    <th>Name</th>     
+  </tr>
+
+  <% @types.each do |type| %>
+    <tr>
+      <td><%= type.name %></td>   
+    </tr>
+  <% end %>
+</table>
