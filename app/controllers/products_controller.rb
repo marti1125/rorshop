@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
 		@product = Product.new
 	end
 	def create
-		#@type = Type.find(params[:type_id])
+		#@type = Post.find(params[:post_id])
 		@product = Product.new(params[:product])
 		if @product.save
 			redirect_to :action => :show, :id => @product.id
