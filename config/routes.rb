@@ -1,4 +1,7 @@
 Rorshop::Application.routes.draw do
+  resources :products
+
+
   resources :types
 
 

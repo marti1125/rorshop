@@ -1,7 +1,7 @@
-<h1>Listing posts</h1>
-<%= link_to 'New Type', :action => :new %>
+<h1>Listing Types</h1>
+<%= link_to 'New Type', {:controller => 'types', :action => :new}, {:class => 'btn btn-primary'} %>
 <br/><br/>
-<table>
+<table class="table">
   <tr>
     <th>Name</th>
     <th></th>
