@@ -1,8 +1,9 @@
 Rorshop::Application.routes.draw do
 
-  resources :products
-
-  resources :types
+  resources :types do
+    resources :products 
+  end
+  
 
 
   # The priority is based upon order of creation:
