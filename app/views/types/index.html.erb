@@ -5,6 +5,7 @@
 <br/><br/>
 <table class="table">
   <tr>
+    <th>Id</th>
     <th>Name</th>
     <th></th>
     <th></th>  
@@ -12,6 +13,7 @@
 
   <% @types.each do |type| %>
     <tr>
+      <td><%= type.id %></td>
       <td><%= type.name %></td>
       <td><%= link_to 'Edit', :action => :edit, :id => type.id %></td>
       <td><%= link_to 'Delete', { :action => :destroy, :id => type.id }, :method => :delete, :data => { :confirm => 'Are you sure?'} %></td>
